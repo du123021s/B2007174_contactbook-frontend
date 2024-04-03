@@ -1,25 +1,27 @@
 <script>
-export default{
-
-}
-
+import AppHeader from "@/components/AppHeader.vue";
+export default {
+  watch: {},
+  components: {
+    AppHeader,
+  },
+};
 </script>
 
 <template>
-  <h1>Hello, vue.js!</h1>
+  <div id="app">
+    <AppHeader />
+    <div class="container mt-3">
+      <router-view />
+    </div>
+  </div>
 </template>
-
 <style>
-  .page{
-    max-width: 400px;
-    margin: auto;
-  }
+.page {
+  max-width: 400px;
+  margin: auto;
+}
 </style>
-
-
-
-
-
 
 <!-- <script>
   export default{
@@ -28,12 +30,17 @@ export default{
 
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="./assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -72,4 +79,5 @@ header {
     flex-wrap: wrap;
   }
 }
-</style> -->
+</style>
+-->
